@@ -20,12 +20,12 @@ spring:
         - id: profesor
           uri: lb://profesor
           predicates:
-            - Path=/profesor/**
+            - Path=8001/profesor/**
         - id: impresoras
           uri: lb://impresoras
           predicates:
-            - Path=/impresoras/**
+            - Path=8003/impresoras/**
         - id: prestamos
           uri: lb://prestamos
           predicates:
-            - Path=/prestamos/**
+            - Path=8002/prestamos/**
